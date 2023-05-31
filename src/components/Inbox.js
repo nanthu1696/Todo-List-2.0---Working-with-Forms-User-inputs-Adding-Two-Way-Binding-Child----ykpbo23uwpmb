@@ -37,7 +37,7 @@ const Inbox = (props) => {
           return (
             <div className="box" key={list.number}>
               <div className="task">
-                {list.title} ({list.date})
+                {list.title} ({list.date.toLocaleDateString()})
               </div>
             </div>
           );
