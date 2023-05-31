@@ -13,7 +13,7 @@ const Inbox = (props) => {
     let arr = [...props.list, obj];
     console.log(arr);
     props.append(arr);
-    setnewTask(false);
+    setNewTask(false);
     setNumber(number+1);
   }
   return (
