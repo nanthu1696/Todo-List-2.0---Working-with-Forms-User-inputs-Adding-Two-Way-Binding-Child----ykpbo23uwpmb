@@ -21,7 +21,7 @@ const Today = (props) => {
   
   return (
     <div id="today-list">
-      <ListRender list={arr} />
+      <ListRender list={list} />
     </div>
   );
 };
