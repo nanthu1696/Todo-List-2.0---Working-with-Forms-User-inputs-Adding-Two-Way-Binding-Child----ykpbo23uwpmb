@@ -35,7 +35,7 @@ const Inbox = (props) => {
       <div id="inbox">
         {props.list.map((list) => {
           return (
-            <div className="box" key={}>
+            <div className="box" key={list.number}>
               <div className="task">
                 {list.title} ({list.date})
               </div>
