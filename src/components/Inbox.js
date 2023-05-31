@@ -2,9 +2,20 @@ import React, { useState, useRef } from "react";
 
 const Inbox = (props) => {
   const [newTask, setNewTask] = useState(false);
+  const [number, setNumber] = useState(4);
   const titleRef = useRef(null);
   const dateRef = useRef(null);
-  function addTodo(){}
+  function addTodo(event){
+    event.preventDefault();
+    let title = titleRef.current.value;
+    let date = new Date(dateRef.current.value);
+    let obj = { "number": number, "title": title, "date": date };
+    let arr = [...props.list, obj];
+    console.log(arr);
+    props.append(arr);
+    setnewTask(false);
+    setNumber(number+1);
+  }
   return (
     <div>
       <h3>Inbox</h3>
