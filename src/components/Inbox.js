@@ -35,7 +35,7 @@ const Inbox = (props) => {
           return (
             <div className="box" key={}>
               <div className="task">
-                {} ({})
+                {list.title} ({list.date})
               </div>
             </div>
           );
