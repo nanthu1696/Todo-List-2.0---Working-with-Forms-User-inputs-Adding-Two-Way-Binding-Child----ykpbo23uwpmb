@@ -6,7 +6,7 @@ const Today = (props) => {
   
   return (
     <div id="today-list">
-      <ListRender list={} />
+      <ListRender list={props.list} />
     </div>
   );
 };
