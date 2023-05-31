@@ -15,7 +15,7 @@ const Inbox = (props) => {
         <form className="newtask-box">
           <input type="text" id="title" ref={}></input>
           <div className="buttons">
-            <button className="new" id="add-list" onClick={}>
+            <button className="new" id="add-list" onClick={addTodo}>
               Add Task
             </button>
             <button className="new" onClick={() => setNewTask(false)}>
