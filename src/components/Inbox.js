@@ -1,13 +1,13 @@
 import React, { useState, useRef } from "react";
 
 const Inbox = (props) => {
- 
-
+  const [newTask, setNewTask] = useState(false);
+  function addTodo(){}
   return (
     <div>
       <h3>Inbox</h3>
       {!newTask && (
-        <button className="new" onClick={} id='add-new'>
+        <button className="new" onClick={() => setNewTask(true)} id='add-new'>
           +Add New
         </button>
       )}
@@ -18,7 +18,7 @@ const Inbox = (props) => {
             <button className="new" id="add-list" onClick={}>
               Add Task
             </button>
-            <button className="new" onClick={}>
+            <button className="new" onClick={() => setNewTask(false)}>
               Cancel
             </button>
             <input
