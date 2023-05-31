@@ -7,7 +7,7 @@ const Next7Days = (props) => {
 
   return (
     <div id="next-list">
-      <ListRender list={}/>
+      <ListRender list={props.list}/>
     </div>
   );
 };
