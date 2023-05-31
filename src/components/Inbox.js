@@ -2,6 +2,8 @@ import React, { useState, useRef } from "react";
 
 const Inbox = (props) => {
   const [newTask, setNewTask] = useState(false);
+  const titleRef = useRef(null);
+  const dateRef = useRef(null);
   function addTodo(){}
   return (
     <div>
@@ -13,7 +15,7 @@ const Inbox = (props) => {
       )}
       {newTask && (
         <form className="newtask-box">
-          <input type="text" id="title" ref={}></input>
+          <input type="text" id="title" ref={titleRef}></input>
           <div className="buttons">
             <button className="new" id="add-list" onClick={addTodo}>
               Add Task
@@ -23,7 +25,7 @@ const Inbox = (props) => {
             </button>
             <input
               type="date"
-              ref={}
+              ref={dateRef}
               defaultValue="2022-09-27"
               id="date"
             ></input>
